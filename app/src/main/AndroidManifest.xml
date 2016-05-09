@@ -20,6 +20,10 @@
         <service android:name=".scheduled.simple.ServiceWithHandler" />
 
         <service android:name=".scheduled.alarm.ServiceFromAlarm" />
+
+        <service android:name=".scheduled.scheduler.DataSyncJobService"
+                 android:exported="false"
+                 android:permission="android.permission.BIND_JOB_SERVICE"/>
     </application>
 
 </manifest>
