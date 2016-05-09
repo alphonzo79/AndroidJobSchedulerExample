@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">AndroidJobSchedulerExample</string>
+    <string name="app_name">Android JobScheduler Example</string>
+
+    <string name="main_screen_message_formatted">Use one of the following methods to schedule some work %1$d seconds in the future</string>
+    <string name="handler_button_label">Service with Handler</string>
+    <string name="alarm_service_button_label">Alarm Service</string>
+    <string name="job_scheduler_button_label">Job Scheduler</string>
+
+    <string name="starting_task_message">Starting your task!</string>
 </resources>
