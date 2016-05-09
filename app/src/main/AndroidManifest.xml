@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".scheduled.ServiceWithHandler" />
+        <service android:name=".scheduled.simple.ServiceWithHandler" />
+
+        <service android:name=".scheduled.alarm.ServiceFromAlarm" />
     </application>
 
 </manifest>

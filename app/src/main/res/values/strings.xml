@@ -7,4 +7,6 @@
     <string name="job_scheduler_button_label">Job Scheduler</string>
 
     <string name="starting_task_message">Starting your task!</string>
+    <string name="big_files_downloaded_formatted">%1$d Big Files Downloaded</string>
+    <string name="finished_task_message">Finished with your task!</string>
 </resources>

@@ -1,9 +1,8 @@
-package rowley.androidjobschedulerexample.scheduled;
+package rowley.androidjobschedulerexample.scheduled.simple;
 
 import android.app.IntentService;
 import android.content.Intent;
 import android.os.Handler;
-import android.util.Log;
 import android.widget.Toast;
 
 import rowley.androidjobschedulerexample.R;

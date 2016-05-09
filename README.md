@@ -8,7 +8,13 @@ Setup and Dependencies
 
 This project is built using AS 2.1, Gradle plugin 2.1 and Gradle Wrapper 2.10. As long as you have a sufficient version of AS installed and use the Gradle wrapper everything should work just fine. If you keep a local install of Gradle and use it for command-line work then you will either need to have a sufficient version of Gradle installed or tweak this setup to match your needs.
 
-`//todo: More dependencies here as we develop the example.`
+| Name                 | Provider    | Summary |
+|:--------------------:|:-----------:|:-------:|
+| J-Unit               |             | Support for java unit testing |
+| Android Appcompat v7 | Google      | Backwards compatibility library |
+| ButterKnife | Jake Wharton      | View Injection library |
+| RxJava | ReactiveX      | Reactive Extensions for Java thread work |
+| RxAndroid | ReactiveX      | Android Schedulers for Reactive Extensions |
 
 Background and Information
 --------------------------
