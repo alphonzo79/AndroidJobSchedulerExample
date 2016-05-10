@@ -13,6 +13,7 @@ import rowley.androidjobschedulerexample.R;
 import rx.Observable;
 import rx.Subscriber;
 import rx.Subscription;
+import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
@@ -51,7 +52,7 @@ public class DataSyncJobService extends JobService {
             public Boolean call(Long aLong) {
                 return completedFiles++ == TOTAL_FILES || hasBeenCanceled;
             }
-        }).subscribeOn(Schedulers.computation()).observeOn(Schedulers.immediate()).subscribe(new Subscriber<Long>() {
+        }).subscribeOn(Schedulers.computation()).observeOn(AndroidSchedulers.mainThread()).subscribe(new Subscriber<Long>() {
             @Override
             public void onCompleted() {
                 Toast.makeText(DataSyncJobService.this, R.string.finished_task_message, Toast.LENGTH_LONG).show();
