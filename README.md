@@ -1,7 +1,7 @@
 Android JobScheduler Example
 ============================
 
-This project is a very simple example of using the JobScheduler as an alternative to the AlarmService for scheduling background (usually background, but not necessarily, I guess) work some time in the future. The UI is simple and bare-bones. There are slides included in the repo that are built to guide a discussion within a group about the example.
+This project is a very simple example of using the JobScheduler as an alternative to the AlarmService for scheduling background (usually background, but not necessarily, I guess) work some time in the future. The UI is simple and bare-bones. There are slides included in the repo that are built to guide a discussion within a group about the example. The are also available [here] (https://speakerdeck.com/alphonzo79/android-jobscheduler-example)
 
 Setup and Dependencies
 ----------------------
