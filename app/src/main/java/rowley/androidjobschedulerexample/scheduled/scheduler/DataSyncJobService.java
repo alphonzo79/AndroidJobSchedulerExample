@@ -47,10 +47,10 @@ public class DataSyncJobService extends JobService {
         //I'm just using a shared pref to stash that value. Probably not the best way, but it's a way...
         completedFiles = getSharedPreferences(SHARED_PREFS_KEY, MODE_PRIVATE).getInt(FILES_COMPLETED_BUNDLE_KEY, 0);
 
-        subscription = Observable.interval(INTERVAL_TIME, INTERVAL_UNIT).takeUntil(new Func1<Long, Boolean>() {
+        subscription = Observable.interval(INTERVAL_TIME, INTERVAL_UNIT).takeWhile(new Func1<Long, Boolean>() {
             @Override
             public Boolean call(Long aLong) {
-                return completedFiles++ == TOTAL_FILES || hasBeenCanceled;
+                return ++completedFiles <= TOTAL_FILES && !hasBeenCanceled;
             }
         }).subscribeOn(Schedulers.computation()).observeOn(AndroidSchedulers.mainThread()).subscribe(new Subscriber<Long>() {
             @Override
